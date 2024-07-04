@@ -6,6 +6,7 @@
 
 int main(){
     pid_t pid;
+    int value = 5;
     //fork a child process
     pid = fork();
 
@@ -13,13 +14,14 @@ int main(){
         fprintf(stderr,"Fork Failed");
         return 1;
     }else if(pid==0){
+        value +=15;
         //The child process which copied this program on address space will get the pid variable as 0 
         execlp("/bin/ls","ls",NULL);
         // /bin/ls specifies the "ls" command location and since no other directory route is provided to ls , it executes ls in the current directory as the child process will initally run in the parent's directory.
     }else{
         //parent process fork() call will return the actual process id of the child process to the pid var
         wait(NULL); // wait will wait for the program to finish , instead of NULL we can pass on the status variable
-        printf("Child Complete");
+        printf("Child Complete %d", value );
     }
     return 0 ;
 }

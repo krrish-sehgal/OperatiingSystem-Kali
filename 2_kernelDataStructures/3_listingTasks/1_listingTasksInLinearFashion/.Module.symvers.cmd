@@ -1,0 +1,1 @@
+savedcmd_/home/krrish/Desktop/Programming/2_kernelDataStructures/3_listingTasks/Module.symvers :=  scripts/mod/modpost -M -m       -o /home/krrish/Desktop/Programming/2_kernelDataStructures/3_listingTasks/Module.symvers -T /home/krrish/Desktop/Programming/2_kernelDataStructures/3_listingTasks/modules.order -i Module.symvers -e 

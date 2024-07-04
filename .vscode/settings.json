@@ -1,12 +1,18 @@
 {
-    "files.associations": {
-        "kernel.h": "c",
-        "module.h": "c",
-        "sysinfo.h": "c",
-        "init.h": "c",
-        "stringify.h": "c",
-        "compiler.h": "c",
-        "build_bug.h": "c",
-        "stdio.h": "c"
-    }
+  "files.associations": {
+    "*.m": "octave",
+    "*.txt": "cmake",
+    "kernel.h": "c",
+    "module.h": "c",
+    "sysinfo.h": "c",
+    "init.h": "c",
+    "stringify.h": "c",
+    "compiler.h": "c",
+    "build_bug.h": "c",
+    "stdio.h": "c",
+    "stat.h": "c",
+    "sched.h": "c",
+    "types.h": "c",
+    "list": "c"
+  }
 }
